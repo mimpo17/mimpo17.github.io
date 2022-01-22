@@ -1,0 +1,137 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* BASIC STYLING------------------ */
+    
+    html {
+        font-size: 1rem;
+        font-family: sofia-pro, sans-serif;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    body {
+        font-family: sofia-pro, sans-serif;
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    .homepage-bg {
+        background-image: url(../img/homepage_bg_mobile.jpg);
+        background-color: white;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .homepage-container h1 {
+        font-weight: 500;
+        font-size: 1.7rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-align: center;
+    }
+    
+    .homepage-container h2 {
+        font-weight: 900;
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-align: center;
+    }
+    
+    .homepage-container p {
+        font-weight: 200;
+        max-width: 15rem;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-top: 1rem;
+    }
+    
+    .homepage-nav {
+        display: inline-block;
+        margin-top: 1.5rem;
+    }
+    
+    .home-buttons {
+        display: inline-block;
+        font-weight: 500;
+        background-color: white;
+        text-align: center;
+        padding: 0.6rem 1.2rem 0.77rem 1.2rem;
+        border: 0.125rem solid rgb(0, 0, 0);
+        border-radius: 5rem;
+        margin: 0rem 0.6rem;
+        box-shadow: 0.25rem 0.25rem black;
+    }
+    
+    .home-buttons:hover,
+    .home-buttons:focus {
+        transform: scale(1.13);
+        transition: all 0.12s ease-in-out;
+        box-shadow: 0.25rem 0.25rem black;
+        background-color: black;
+        color: white
+    }
+    
+    button {
+        border: none;
+        background-color: none;
+        background: none;
+    }
+    /* END OF BASIC STYLING ----------------*/
+    /* FOOTER STYLING */
+    
+    .homepage-footer {
+        position: fixed;
+        text-align: center;
+        background: transparent;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer-item {
+        font-size: 0.8rem;
+        display: block;
+        text-align: center;
+        margin-top: 0.3rem;
+        font-weight: 400;
+    }
+    /* reference for footer icons and implementation: https: //www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+    
+    .fa {
+        padding: 0.2rem;
+        margin: 1rem 0.6rem 0.2rem 0.6rem;
+        font-size: 1.7rem;
+        width: 2rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        transition: all 0.12s ease-in-out;
+    }
+    
+    .fa:hover,
+    .fa:focus {
+        color: rgb(47, 113, 236);
+        transition: all 0.25s ease-in-out;
+        transform: scale(1.1);
+    }
+    /* Set a specific color for each brand */
+    
+    .fa-instagram,
+    .fa-pinterest,
+    .fa-linkedin {
+        color: black;
+    }

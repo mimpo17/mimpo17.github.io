@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid
+}
+
+.homepage-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    /* 45vh 55vh; */
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.homepage-container-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+    grid-row: 2;
+    margin-right: 1rem;
+}
+
+@media(min-width: 20.063rem) {
+    .homepage-container h1 {
+        font-size: 2.5rem;
+    }
+    .homepage-container h2 {
+        font-size: 5rem;
+        margin: 0.5rem 1rem;
+    }
+    .homepage-container p {
+        max-width: 40rem;
+    }
+}
+
+@media (min-width: 47rem) {
+    .homepage-grid {
+        grid-template-columns: 43vw 57vw;
+        grid-template-rows: auto;
+    }
+    .homepage-container {
+        height: 85vh;
+        justify-content: center;
+        align-items: flex-start;
+        justify-self: start;
+        margin-top: 3rem;
+        grid-column: 2;
+        margin-left: 0rem;
+    }
+    .homepage-container-2 {
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 2rem;
+        grid-row: 1;
+        /* margin-top: 3rem; */
+        /* margin-right: 4rem; */
+    }
+    .homepage-container h1 {
+        font-size: 4rem;
+        margin-left: 0;
+    }
+    .homepage-container h2 {
+        font-size: 7rem;
+        margin-left: 0;
+        text-align: left;
+    }
+    .homepage-container p {
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left
+    }
+    .homepage-bg {
+        background-image: url(../img/homepage_bg.jpg);
+    }
+}
+
+@media (min-width: 75rem) {
+    .homepage-grid {
+        grid-template-columns: 43vw 57vw;
+        grid-template-rows: auto;
+    }
+    .homepage-container {
+        height: 85vh;
+        justify-content: center;
+        align-items: flex-start;
+        justify-self: start;
+        margin-top: 3rem;
+        grid-column: 2;
+        margin-left: 0rem;
+    }
+    .homepage-container-2 {
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 2rem;
+        grid-row: 1;
+        /* margin-top: 3rem;
+        margin-right: 4rem; */
+    }
+    .homepage-container h1 {
+        font-size: 4rem;
+        margin-left: 0;
+    }
+    .homepage-container h2 {
+        font-size: 7rem;
+        margin-left: 0;
+    }
+    .homepage-container p {
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left
+    }
+    .homepage-bg {
+        background-image: url(../img/homepage_bg.jpg);
+    }
+}
+
+
+/* NAV BAR RESIZING */
+
+
+/* nav bar reference: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci  */
+
+@media only screen and (max-width: 35rem) {
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-link {
+        color: white;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/* end of dev.to refernce */

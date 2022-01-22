@@ -1,0 +1,412 @@
+/* BASIC STYLING */
+
+h2 {
+    color: black;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-container p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    line-height: 1.6rem;
+    /* max-width: 20rem; */
+}
+
+.about-container h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-align: center;
+}
+
+.about-container-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    /* margin-top: 2rem; */
+    grid-row: 1;
+    /* margin-right: 1rem; */
+}
+
+
+/* .contact-container {
+    display: inline-block;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    margin: 2.5rem;
+} */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    justify-items: center; */
+    justify-self: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    /* grid-column: 2; */
+    max-width: 30rem;
+}
+
+.contact-container h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.more-content-button {
+    margin-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* END OF BASIC STYLING */
+
+
+/* CONTACT FORM STYLING */
+
+.pink-container {
+    background-color: #F7B9B7;
+    padding: 2rem 1rem;
+}
+
+
+/* form {
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border-radius: 5rem;
+
+    margin: 0;
+}
+
+textarea {
+    background: #fff;
+    border: 0.125rem solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    resize: none;
+}
+
+
+
+
+.account-info {
+    padding: 20px 20px 0 20px;
+}
+
+.account-info label {
+    color: black;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.account-info input {
+    background: #fff;
+    border: 0.125rem solid black;
+    padding: 6px;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+
+
+
+ */
+
+.contact-form form {
+    display: grid;
+}
+
+.contact-form label {
+    color: black;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    text-align: start;
+}
+
+.contact-form input {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 1.4rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4rem;
+    border: 0.125rem solid black;
+}
+
+.contact-form textarea {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    background: white;
+    border: 0.125rem solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    resize: none;
+}
+
+
+/* .contact-info-item h3 {
+    color: var(--black);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.contact-info-item p {
+    color: var(--black);
+    margin: 0.5rem 0.5rem 0.5rem 0;
+} */
+
+.send-button {
+    background: black;
+    padding: 0.6rem 1.2rem 0.77rem 1.2rem;
+    border: 0.125rem solid white;
+    border-radius: 5rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+    margin-top: 2rem;
+}
+
+.send-button:hover,
+.send-button:focus {
+    transform: scale(1.13);
+    transition: all 0.12s ease-in-out;
+    box-shadow: 0.25rem 0.25rem rgb(255, 255, 255);
+}
+
+
+/* .submit-button {
+    border: solid;
+    border-color: var(--black);
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--black);
+    border-radius: 1rem;
+    color: var(--white);
+    transition-duration: 0.3s;
+} */
+
+
+/* END OF CONTACT FORM STYLING */
+
+
+/* NAV BAR STUFF-----------------*/
+
+.header {
+    border-bottom: 0.125rem solid rgb(0, 0, 0);
+    border-top: 0.125rem solid rgb(0, 0, 0);
+    background-color: #F7B9B7;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-logo:hover,
+.nav-logo:focus {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    /* text-decoration: none;
+            padding: 0rem;
+            margin: 0; */
+    padding: 0.82rem 0rem;
+    margin: 0;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+button {
+    border: none;
+    background-color: none;
+    background: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* so the dropdown stays on top of everything */
+    z-index: 9999;
+    /* background-color: black; */
+    /* position: fixed; */
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffffff;
+}
+
+.nav-logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+/* this is the whole 'thing' together (word and animation) */
+
+.hover-line-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0.2rem;
+}
+
+.hover-line-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-line-animation:hover:after,
+.hover-line-animation:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: rgb(255, 255, 255);
+}
+
+.carousel-inner {
+    /* same size as my images */
+    width: 315px;
+    height: 398px;
+}
+
+
+/* resource to change carousel arrow colour https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-control-next-icon {
+    margin-left: 1.5rem;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 1.5rem;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-next-icon:focus,
+.carousel-control-prev-icon:hover,
+.carousel-control-prev-icon:focus {
+    transform: scale(1.2);
+}
+
+
+/* END OF NAV BAR STUFF --------------------*/
+
+
+/* FOOTER STYLING */
+
+.header-bottom {
+    background-color: #F7B9B7;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.fa {
+    padding: 0.2rem;
+    margin: 0.2rem 0.6rem;
+    font-size: 1.7rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+}
+
+.fa:hover,
+.fa:focus {
+    color: white;
+    transition: all 0.25s ease-in-out;
+    transform: scale(1.1);
+}
+
+.fa-instagram,
+.fa-pinterest,
+.fa-linkedin {
+    color: black;
+}
+
+.footer-item {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* END OF FOOTER STYLING */

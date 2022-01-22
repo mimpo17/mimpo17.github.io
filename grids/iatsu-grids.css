@@ -1,0 +1,111 @@
+ .iatsu-grid {
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+ }
+ 
+ .first-image,
+ .whole-col,
+ .half-col-left,
+ .half-col-right {
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     justify-content: center;
+     align-items: center;
+     /* padding: 2.5rem 1rem */
+ }
+ 
+ .whole-col,
+ .half-col-left,
+ .half-col-right {
+     margin-left: 2.2rem;
+     margin-right: 2.2rem;
+     margin-top: 1.1rem;
+     margin-bottom: 1.1rem;
+     /* split the top/bottom in half if too much space and want even all around */
+ }
+ 
+ .half-col-left {
+     margin-right: 1.1rem;
+ }
+ 
+ .half-col-right {
+     margin-left: 1.1rem;
+ }
+ 
+ .oops {
+     padding: 0rem;
+     /* margin: 0; */
+     margin-left: 1.2rem;
+     margin-right: 1.2rem;
+ }
+ 
+ .col-space {
+     padding: 1.2rem;
+ }
+ 
+ .whole-col h1 {
+     font-size: 4.2rem;
+     font-weight: 600;
+     margin-bottom: 2rem;
+     margin-top: 1rem;
+     line-height: 2.5rem;
+ }
+ 
+ .whole-col h2 {
+     font-size: 1.1rem;
+     font-weight: 300;
+     font-style: italic;
+ }
+ 
+ .whole-col h3 {
+     font-weight: 600;
+     font-size: 1.75rem;
+     margin: 0.4rem 2rem;
+ }
+ 
+ .whole-col p {
+     line-height: 1.6rem;
+     margin: 1.2rem 2rem;
+ }
+ 
+ @media (min-width: 47rem) {
+     .first-image,
+     .whole-col {
+         grid-column: 1 / 3;
+         /* height: 40vh; */
+     }
+     .iatsu-grid {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: auto;
+     }
+     .column {
+         width: 20%;
+         text-align: center;
+     }
+ }
+ 
+ @media (min-width: 75rem) {
+     .first-image,
+     .whole-col {
+         grid-column: 1 / 3;
+         /* width: 100%; */
+         /* height: 45vh; */
+         text-align: left;
+     }
+     .iatsu-grid {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: auto;
+     }
+     .column {
+         width: 20%;
+         text-align: center;
+     }
+     .half-col-left {
+         grid-column: 1 / 2;
+     }
+     .half-col-right {
+         grid-column: 2 / 3;
+     }
+ }
